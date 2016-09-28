@@ -1,0 +1,64 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$blue: #a5dff9;
+$pink: #ef5285;
+$red: #ff5a5f;
+$green: #60c5ba;
+$yellow: #feee7d;
+$l-grey: #9daaaf;
+$grey: #86969c;
+
+
+body {
+	text-align: center;
+}
+
+h1 /* Landing headline */{
+	font-size: 52px;
+	color: black;
+}
+
+h2 /* Section sub-heading */{
+	font-size: 36px;
+	color: #2e3436;
+	line-height: 1.2;
+}
+
+h3 /* Landing sub-headline */{
+	font-size: 18px;
+	color: black;
+	line-height: 1.5;
+}
+
+h4 /* Benefit blurb */{
+	font-size: 18px;
+	color: #70797c;
+	line-height: 1.2;
+}
+
+h5 /* Section title */{
+	font-size: 14px;
+	color: $grey;
+	text-transform: uppercase;
+}
+
+h6 /* Testimonial names */{
+	font-size: 10px;
+	color: #86969c;
+}
+
+p {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #86969c;
+}
+
+p, a {
+	text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active {
+	text-decoration: none;
+}

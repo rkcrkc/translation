@@ -1,0 +1,22 @@
+<div class="pagecontainer">
+
+	<%= render 'hero' %>
+	<%= render 'why' %>
+	<%= render 'services' %>
+	<%= render 'partners' %>
+	<%= render 'features' %>
+	<%= render 'industries' %>
+	<%= render 'close' %>
+
+
+</div>
+
+	<%= render 'footer' %>
+
+<script>
+	$( document ).ready(function() {
+	  $('[data-toggle="popover"]').popover();
+	  $('[data-toggle="collapse"]').collapse();	  
+	  $('[data-toggle="tooltip"]').tooltip();	  	  
+	});
+</script>

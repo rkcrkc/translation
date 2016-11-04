@@ -94,7 +94,7 @@ $grey: #86969c; /* 134,150,156 */
 }	
 
 .hero {
-	background: url("online.jpg");
+	background: url("pair2.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -114,7 +114,7 @@ $grey: #86969c; /* 134,150,156 */
 }
 
 #cta-holder {
-	max-width: 600px;
+	max-width: 400px;
 	background: rgba(0,0,0,0.3);
 	margin: $gutter 0;
 	padding: $gutter;
@@ -148,6 +148,7 @@ $grey: #86969c; /* 134,150,156 */
 		margin-bottom: 20px;
 
 		h4 {
+			font-size: 18px;
 			color: white;
 
 			@media (max-width: 480px) {
@@ -229,10 +230,14 @@ $grey: #86969c; /* 134,150,156 */
 }
 
 .features {
-	background: url("tech.jpg");
+	background: url("group.jpeg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+
+	.section-background-overlay {
+		background-color: rgba(0,0,0,0.2)		
+	}
 
 
 	h2, h5, p {
@@ -275,7 +280,7 @@ $grey: #86969c; /* 134,150,156 */
 }
 
 .services {
-	background: url("online-2.jpg");
+	background: url("desk2.jpeg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -372,16 +377,24 @@ $grey: #86969c; /* 134,150,156 */
 
 }
 
-.tile-grid-wrapper {
-/*	overflow: hidden; */
-}
-
 .tile-container {
 	padding-bottom: 29.33%;
 	width: 29.33%;
 	position: relative;
 	float: left;
 	margin: 2%;
+}
+
+.tile-below, .tile-container:hover>.tile-above {
+    display: none;
+}
+
+.tile-container:hover>.tile-below {
+    display: block;
+}
+
+.tile-grid-wrapper {
+/*	overflow: hidden; */
 }
 
 .tile-overlay {
@@ -397,8 +410,14 @@ $grey: #86969c; /* 134,150,156 */
 		font-size: 22px;
 		text-transform: uppercase;
 	    background-color: rgba(0,0,0,0.45);
-	    padding-top: 5%;
-	    padding-bottom: 5%;	
+	    padding: 5%;
+	}
+
+	p {
+		color: white;
+		font-size: 18px;
+	    background-color: rgba(0,0,0,0.45);
+	    padding: 5%;
 	}
 
 	div {
@@ -446,7 +465,7 @@ $grey: #86969c; /* 134,150,156 */
 	}
 
 	.tile-trade {
-		background: url("sq-food.jpg");
+		background: url("sq-fashion.jpg");
 		background-size: 100%;		
 	}
 
@@ -466,7 +485,7 @@ $grey: #86969c; /* 134,150,156 */
 	}
 
 	.tile-banking {
-		background: url("sq-travel.jpg");
+		background: url("sq-fashion.jpg");
 		background-size: 100%;		
 	}
 
@@ -477,14 +496,14 @@ $grey: #86969c; /* 134,150,156 */
 
 
 .email-capture {
-	background: url("couple.jpg");
+	background: url("canvas.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	margin-top: $gutter*3;
 
 	.email-capture-text-box {
-		background-color: rgba(255,90,95,1);
+		background-color: rgba(255,90,95,0.85);
 		max-width: 600px;
 		padding: $gutter;
 		margin: $gutter auto;
@@ -496,13 +515,17 @@ $grey: #86969c; /* 134,150,156 */
 		}		
 	}
 
+	h1 {
+		color: white;
+	}
+
 	p {
 		color: white;
 	}
 }
 
 footer {
-	background-color: rgba(0,0,0,0.65);
+	background-color: rgba(0,0,0,0.2);
 	color: white;
 
 	.footer {
@@ -540,7 +563,7 @@ footer {
 		}
 
 		p {
-			color: white;
+			color: grey;
 			margin: 0;
 		}
 

@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'en/about'
+
+  get 'en/contact'
+
+  get 'en/faq'
+
+  get 'en/home'
+
+  get 'en/trans'
+
   root 'pages#home'
 
   get 'pages/trans'

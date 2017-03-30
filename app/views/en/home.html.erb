@@ -1,2 +1,23 @@
-<h1>En#home</h1>
-<p>Find me in app/views/en/home.html.erb</p>
+<div class="pagecontainer">
+
+	<div class="en">
+
+		<%= render 'en_hero' %>
+		<%= render 'en_why' %>
+		<%= render 'en_services' %>
+		<%= render 'en_partners' %>
+		<%= render 'en_features' %>
+		<%= render 'en_industries' %>
+		<%= render 'en_close' %>
+
+	</div>
+
+</div>
+
+<script>
+	$( document ).ready(function() {
+	  $('[data-toggle="popover"]').popover();
+	  $('[data-toggle="collapse"]').collapse();	  
+	  $('[data-toggle="tooltip"]').tooltip();	  	  
+	});
+</script>

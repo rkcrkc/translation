@@ -4,15 +4,36 @@
 		<h1>免费咨询</h1>
 
 		<div class="email-capture-text-box">
-			<p style="margin-bottom:5%;">Leave us your WeChat ID or email address and we’ll follow up with you pronto. We’ll give you our honest opinion on your website and branded materials from the perspective of a foreigner, and tips on what we think needs improving. Completely free - no risk, no obligation.</p>
+			<p style="margin-bottom:5%;">想知道潜在外国客户对您品牌的第一印象吗？请留下您的微信或邮箱地址，我们将提供对您品牌信息的免费反馈。</p>
 
-		    <div class="input-group input-group-lg">
-		      <input type="text" class="form-control" placeholder="Enter your email or WeChat ID" style="font-size:14px;">
-		      <span class="input-group-btn">
-		        <button class="btn btn-default" type="button" href="#">现在就免费咨询！</button>
-		      </span>
-		    </div><!-- /input-group -->
+
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bs-example-modal-sm-2">
+				  现在就免费咨询！
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade bs-example-modal-sm-2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+				  <div class="modal-dialog modal-sm" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">扫一扫，关注我们的微信公众号！</h4>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">好了</button>
+				      </div>
+				    </div>
+				  </div>
+				</div><!-- /Modal -->
 
 		</div>
 	</div>
+
+
+	<%= render 'footer' %>
+
 </div>

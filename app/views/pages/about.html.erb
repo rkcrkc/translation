@@ -1,45 +1,45 @@
 <div class="page page-about">
+	
+	<div class="page-header">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+			    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			    </button>    	
+				<a class="navbar-brand" href="/">
+				<%= image_tag "dengpao-logo-full-transparent.png" %>
+				</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="trans">翻译服务</a></li>
+		        <li class="navbar-active-tab"><a href="about">关于我们</a></li>
+		        <li><a href="contact">联系我们</a></li>        
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
 
-	<nav class="navbar navbar-default">
-	  <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header">
-		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-		    </button>    	
-			<a class="navbar-brand" href="/">
-			<%= image_tag "logo-colour.png" %>
-			</a>
-	    </div>
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="trans">翻译服务</a></li>
-	        <li class="navbar-active-tab"><a href="about">关于我们</a></li>
-	        <li><a href="contact">联系我们</a></li>        
-	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
+		<div class="page-title">
+			<h2>关于我们</h2>
+		</div>
+	</div>
 
 	<div class="page-wrapper">
-
-		<div class="page-heading">
-			<h1>About Us</h1>
-		</div>
 
 		<div class="page-content">
 
 			<div class="page-sub-content narrow">
-				<p>We are an experienced team made up of bilingual native English and Chinese speakers. Based out of Shanghai and Beijing, we can help you wherever you are in China.</p>
+				<p>我们的顾问拥有多个产业市场、销售、客户管理方面的从业经验。他们除了双语流利之外，更重要的是熟悉海外一流品牌的沟通偏好。准确、自然且专业的英文表达将帮助您成为海外客户在中国的不二选择。我们的坐标为北京和上海。如果您身在其他城市获国家，我们也很乐意为您提供远程服务。</p>
 			</div>
 
 			<div class="row">
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-6">
 					<div class="team-member">
 						<div>
 							<%= image_tag "mike.png" %>
@@ -52,7 +52,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-6">
 					<div class="team-member">
 						<div>
 							<%= image_tag "mike.png" %>
@@ -64,9 +64,7 @@
 							</p>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-2">
-				</div>								
+				</div>							
 			</div>
 
 			<div class="row">
@@ -111,6 +109,6 @@
 		</div>
 
 	</div>
-</div>
 
 <%= render 'footer' %>
+</div>

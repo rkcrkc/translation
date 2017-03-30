@@ -1,3 +1,90 @@
-// Place all the styles related to the en controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* BASE STYLES ====================== */
+
+$font-family-sans-serif: "Raleway", Helvetica, sans-serif;
+$gutter: 30px;
+
+$blue: #1fa8ce; /* 31,168,206 */
+$blue2: #318ce7; /* 49,140,231 */
+$blue-logo: #85ADDD; /* 133,173,221 */
+$pink: #ef5285; /* 239,82,133 */
+$red: #FF5A5F; /* 255,90,95 */
+$green: #67D5B5; /* 96,197,186 */
+$yellow: #FCEA00; /* 254,238,125 */
+$l-grey: #9daaaf; /* 157,170,175 */
+$grey: #86969c; /* 134,150,156 */
+$purple: #C89EC4;
+$orange: #ff5f2e;
+
+/*----------------------------------------------------------------------------- 
+1. SECTIONS
+-----------------------------------------------------------------------------*/
+
+.en {
+	.hero {
+		background: url("asian.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+	#cta-holder {
+		max-width: 600px;
+		background: rgba(0,0,0,0.6);
+		margin: $gutter 0;
+		padding: $gutter;
+		border-radius: 20px;
+		text-align: left;
+
+		h2 {
+			margin-top: 0px;
+			color: $red;
+		}
+
+		h5 {
+			color: $red;
+		}
+
+		p {
+			color: white;
+		}
+
+	}
+
+	.rounded-box-en {
+		max-width: 700px;
+		border-radius: 50px;
+		margin: 20px auto;
+	}
+
+	.why {
+		p {
+			color: white;
+			margin: 0;
+		}
+	}
+
+	.services {
+		background: url("chat.jpeg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+	.features {
+		background: url("hanzi.jpeg");
+	}	
+
+	.sectors {
+		.section-heading h2 {
+			color: black;
+		}
+	}
+
+	.email-capture {
+		background: url("pair.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+}

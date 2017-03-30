@@ -2,14 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$blue: #a5dff9;
+$blue: #1fa8ce; /* 31,168,206 */
+$blue2: #318ce7; /* 49,140,231 */
+$blue-logo: #85ADDD;
 $pink: #ef5285;
-$red: #ff5a5f;
-$green: #60c5ba;
-$yellow: #feee7d;
+$red: #FF5A5F;
+$green: #67D5B5;
+$yellow: #FCEA00;
 $l-grey: #9daaaf;
 $grey: #86969c;
+$purple: #C89EC4;
 
+
+/* Pre-logo edit colours
+$blue: #a5dff9;
+$green: #60c5ba;
+$yellow: #feee7d;
+*/
+
+/* Post-logo edit colours
+$blue-logo: #85ADDD;
+$green: #67D5B5;
+$yellow: #FCEA00;
+$purple: #C89EC4;
+*/
 
 body {
 	text-align: center;
@@ -46,19 +62,20 @@ h5 /* Section title */{
 
 h6 /* Testimonial names */{
 	font-size: 10px;
-	color: #86969c;
+	color: $grey;
 }
 
 p {
 	font-size: 14px;
 	line-height: 1.5;
-	color: #86969c;
+	color: $grey;
+	text-decoration: none;	
 }
 
-p, a {
+a {
+	color: $grey;
 	text-decoration: none;
-}
-
-a:hover, a:visited, a:link, a:active {
-	text-decoration: none;
+	&:hover, &:active {
+		text-decoration: none;
+	}
 }

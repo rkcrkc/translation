@@ -1,8 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(http://fonts.googleapis.com/css?family=Archivo+Black|Source+Sans+Pro:300);
 
 /* BASE STYLES ====================== */
 
-$font-family-sans-serif: "Raleway", Helvetica, sans-serif;
+$font-family-sans-serif: 'Source Sans Pro', Helvetica, sans-serif;
 $gutter: 30px;
 
 $blue: #1fa8ce; /* 31,168,206 */
@@ -84,7 +84,7 @@ $orange: #ff5f2e;
 	}
 
 	.navbar-default {
-		background-color: rgba(0,0,0,0.3);
+		background-color: rgba(0,0,0,0);
 		border-radius: 0;
 		border: none;
 	}		
@@ -130,7 +130,7 @@ $orange: #ff5f2e;
 }
 
 .hero-overlay {
-	background-color: rgba(0,0,0,0.1)
+	background-color: rgba(0,0,0,0.05)
 }
 
 .hero-en {
@@ -442,12 +442,19 @@ $orange: #ff5f2e;
 		text-align: left;
 	}
 
+	.sector-icon {
+		max-height: 25px;
+		min-width: 20px;
+		margin-right: 10px;
+	}
+
 	.sector-text {
 		padding: $gutter/2;
 		background-color: #f6f6f6;
 		border-radius: 10px;
 		max-width: 455px;
 	}
+
 
 }
 
@@ -457,7 +464,7 @@ $orange: #ff5f2e;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	margin-top: $gutter*3;
+	margin-top: $gutter/2;
 
 	.email-capture-text-box {
 		background-color: rgba(255,90,95,0.85);
@@ -505,13 +512,13 @@ footer {
 	}
 
 	.copyright-bar {
-		background-color: rgba(0,0,0,0.6);
-		padding: $gutter/2;
+		background-color: rgba(0,0,0,0.8);
+		padding: $gutter/3;
 		margin: 0;
 
 		p {
 			font-size: 10px;
-			color: white;
+			color: silver;
 			margin: 0;
 		}
 
@@ -745,14 +752,14 @@ footer {
 .page-trans {
 
 	.page-header {
-		background: url("smile-2.jpg");
+		background-color: #f8c375;
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
 	}
 
 	footer {
-		background: url("asian-2.jpg");
+		background: #f8c375;
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;

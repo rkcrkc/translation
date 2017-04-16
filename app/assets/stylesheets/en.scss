@@ -19,7 +19,7 @@ $orange: #ff5f2e;
 
 .en {
 	.hero {
-		background: url("photo/guy-phone.jpeg");
+		background: image-url("photo/guy-phone.jpeg");
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -68,7 +68,7 @@ $orange: #ff5f2e;
 	}
 
 	.services {
-		background: url("chat.jpeg");
+		background: image-url("chat.jpeg");
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -83,7 +83,7 @@ $orange: #ff5f2e;
 	}
 
 	.features {
-		background: url("canvas.jpeg");
+		background: image-url("canvas.jpeg");
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -96,7 +96,7 @@ $orange: #ff5f2e;
 	}
 
 	.email-capture {
-		background: url("guy-laugh.jpg");
+		background: image-url("guy-laugh.jpg");
 		background-size: cover;
 		background-position: top center;
 		background-attachment: fixed;

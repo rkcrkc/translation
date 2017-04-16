@@ -47,7 +47,7 @@ $orange: #ff5f2e;
 			-moz-transition: color 0.2s linear;
 			-webkit-transition: color 0.2s linear;		
 			&:hover, &:focus {
-				color: #dedede;
+				color: #ddd;
 			}
 		}	
 
@@ -55,14 +55,14 @@ $orange: #ff5f2e;
 	
 		.navbar-toggle {
 			margin: $gutter/2 0 0 $gutter;
-
+			border-color: white;
 
 			  @media (min-width: 768px) {
 			    display: none;	  
 			  }
 
 			.icon-bar {
-				background-color: #ddd;
+				background-color: white;
 			}			  
 		}
 
@@ -512,13 +512,13 @@ footer {
 	}
 
 	.copyright-bar {
-		background-color: rgba(0,0,0,0.8);
+		background-color: #222222;
 		padding: $gutter/3;
 		margin: 0;
 
 		p {
 			font-size: 10px;
-			color: silver;
+			color: #888888;
 			margin: 0;
 		}
 
@@ -564,7 +564,8 @@ footer {
 -----------------------------------------------------------------------------*/
 
 .page {
-	
+
+
 	.page-header {
 		margin: 0;
 	}
@@ -587,19 +588,20 @@ footer {
 			-moz-transition: color 0.2s linear;
 			-webkit-transition: color 0.2s linear;		
 			&:hover, &:focus {
-				color: $l-grey;
+				color: #ddd;
 			}
 		}	
 	
 		.navbar-toggle {
 			margin: $gutter/2 0 0 $gutter;
+			border-color: white;
 
 			  @media (min-width: 768px) {
 			    display: none;	  
 			  }
 
 			.icon-bar {
-				background-color: #ddd;
+				background-color: white;
 			}			  
 		}
 
@@ -620,7 +622,7 @@ footer {
 
 		.navbar-nav > .navbar-active-tab {
 			a {
-				font-weight: bold;
+				
 			}
 		}
 
@@ -646,6 +648,7 @@ footer {
 
 	.page-wrapper {
 		max-width: 700px;
+		min-height: 500px;
 		height: 100%;
 		margin: 0 auto 0 auto;
 		padding: $gutter $gutter $gutter*2 $gutter;
@@ -684,13 +687,13 @@ footer {
 		}
 
 		.copyright-bar {
-			background-color: rgba(0,0,0,0.6);
+			background-color: #555555;
 			padding: $gutter/2;
 			margin: 0;
 
 			p {
 				font-size: 10px;
-				color: white;
+				color: #888888;
 				margin: 0;
 			}
 
@@ -704,21 +707,10 @@ footer {
 /* ====== PAGES ====== */
 
 .page-about {
-	background-color: white;
-
 	.page-header {
-		background: url("guy-coffee.jpg");
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
+		background: $red;
 	}
 
-	footer {
-		background: url("group.jpg");
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;		
-	}
 }
 
 .team-member {
@@ -731,6 +723,7 @@ footer {
 
 	img {
 		max-width: 100px;
+		border-radius: 50px;
 	}
 
 	h3 {
@@ -752,17 +745,7 @@ footer {
 .page-trans {
 
 	.page-header {
-		background-color: #f8c375;
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
-	}
-
-	footer {
-		background: #f8c375;
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
+		background: $green;		
 	}
 
 	h6 {
@@ -827,17 +810,10 @@ footer {
 .page-contact {
 
 	.page-header {
-		background: url("coffee-chat.jpg");
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
+			background: $orange;	
 	}
 
 	footer {
-		background: url("guy-outside.jpg");
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
 	}
 }
 

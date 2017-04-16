@@ -34,7 +34,7 @@ body {
 h1 /* Landing headline */{
 	font-family: 'Archivo Black', sans-serif;
 	font-size: 48px;
-	color: black;
+	text-shadow: 1px 1px #252525;
 }
 
 h2 /* Section sub-heading */{
@@ -76,7 +76,7 @@ p {
 }
 
 a {
-	color: $grey;
+	color: grey;
 	text-decoration: none;
 	&:hover, &:active {
 		text-decoration: none;

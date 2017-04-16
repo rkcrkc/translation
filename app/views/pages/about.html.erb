@@ -12,14 +12,15 @@
 					<span class="icon-bar"></span>
 			    </button>    	
 				<a class="navbar-brand" href="/">
-				<%= image_tag "dengpao-logo-full-transparent.png" %>
+				<%= image_tag "logo/logo-1.png" %>
 				</a>
 		    </div>
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="trans">翻译服务</a></li>
 		        <li class="navbar-active-tab"><a href="about">关于我们</a></li>
-		        <li><a href="contact">联系我们</a></li>        
+		        <li><a href="contact">联系我们</a></li>
+				<li><a href="../en/home"><%= image_tag "flag-eng.png", class: "flag", alt: "English" %></a></li>		        
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -35,14 +36,14 @@
 		<div class="page-content">
 
 			<div class="page-sub-content narrow">
-				<p>我们的顾问拥有多个产业市场、销售、客户管理方面的从业经验。他们除了双语流利之外，更重要的是熟悉海外一流品牌的沟通偏好。准确、自然且专业的英文表达将帮助您成为海外客户在中国的不二选择。我们的坐标为北京和上海。如果您身在其他城市获国家，我们也很乐意为您提供远程服务。</p>
+				<p>我们的顾问拥有多个产业市场、销售、客户管理方面的从业经验。他们除了双语流利之外，更重要的是熟悉海外一流品牌的沟通偏好。准确、自然且专业的英文表达将帮助您成为海外客户在中国的不二选择。</p>
 			</div>
 
 			<div class="row">
 				<div class="col-md-6">
 					<div class="team-member">
 						<div>
-							<%= image_tag "mike.png" %>
+							<%= image_tag "photo/rc.jpg" %>
 						</div>
 						<div>
 							<h3>Ryan</h3>
@@ -55,7 +56,7 @@
 				<div class="col-md-6">
 					<div class="team-member">
 						<div>
-							<%= image_tag "mike.png" %>
+							<%= image_tag "photo/zrq.jpg" %>
 						</div>
 						<div>
 							<h3>Rachel</h3>
@@ -110,5 +111,7 @@
 
 	</div>
 
-<%= render 'footer' %>
+	<footer>
+		<%= render 'copyright' %>
+	</footer>
 </div>

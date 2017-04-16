@@ -1,2 +1,75 @@
-<h1>En#trans</h1>
-<p>Find me in app/views/en/trans.html.erb</p>
+<div class="page page-trans">
+
+	<div class="page-header">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+			    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			    </button>    	
+				<a class="navbar-brand" href="/en/home">
+				<%= image_tag "logo/logo-1.png" %>
+				</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="navbar-active-tab"><a href="trans">Translation</a></li>
+		        <li><a href="about">About</a></li>
+		        <li><a href="contact">Contact Us</a></li>        
+				<li><a href="/"><%= image_tag "flag-china.jpg", class: "flag", alt: "中文" %></a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="page-title">
+			<h2>Translation Services</h2>
+		</div>
+	</div>
+
+	<div class="page-wrapper">
+
+		<div class="page-content">
+
+			<div class="page-sub-content">
+				<p>In addition to helping you with anything consumer-facing, we also offer high quality pro-bono document translation services. We have extensive experience translating a wide range of documents for large and small corporations and institutions alike, including:</p>
+			</div>
+
+			<div class="page-sub-content">
+				<div class="row">
+					<div class="col-sm-6">
+						<h6>Commercial contracts</h6>
+					</div>
+					<div class="col-sm-6">
+						<h6>Internal ops documentation</h6>
+					</div>				
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<h6>Industry reports</h6>
+					</div>
+					<div class="col-sm-6">
+						<h6>Books and novels</h6>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12">
+						<h6>Film & ad translation and sub-titles</h6>
+					</div>					
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<footer>
+		<%= render 'copyright' %>
+	</footer>
+</div>

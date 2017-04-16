@@ -1,2 +1,53 @@
-<h1>En#contact</h1>
-<p>Find me in app/views/en/contact.html.erb</p>
+<div class="page page-contact">
+	
+	<div class="page-header">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+			    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			    </button>    	
+				<a class="navbar-brand" href="home">
+				<%= image_tag "logo/logo-1.png" %>
+				</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="trans">Translation</a></li>
+		        <li><a href="about">About Us</a></li>
+		        <li class="navbar-active-tab"><a href="contact">Contact</a></li>        
+				<li><a href="/"><%= image_tag "flag-china.jpg", class: "flag", alt: "中文" %></a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="page-title">
+			<h2>Contact</h2>
+		</div>
+	</div>
+
+	<div class="page-wrapper">
+		<div class="page-content">
+			<div class="page-sub-content narrow">
+				<p>Just want to get in touch to ask a question? You can reach us via email or our official WeChat account.</p>
+				<h3>WeChat: abcdefg<br>
+				Email: hello@abdc.com</h3>
+			</div>
+
+			<hr>
+
+			<div class="page-sub-content narrow">
+				<p>Registered in the United Kingdom.</p>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<%= render 'copyright' %>
+	</footer>
+</div>

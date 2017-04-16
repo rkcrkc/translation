@@ -12,14 +12,15 @@
 					<span class="icon-bar"></span>
 			    </button>    	
 				<a class="navbar-brand" href="/">
-				<%= image_tag "dengpao-logo-full-transparent.png" %>
+				<%= image_tag "logo/logo-1.png" %>
 				</a>
 		    </div>
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="trans">翻译服务</a></li>
 		        <li><a href="about">关于我们</a></li>
-		        <li class="navbar-active-tab"><a href="contact">联系我们</a></li>        
+		        <li class="navbar-active-tab"><a href="contact">联系我们</a></li>
+				<li><a href="../en/home"><%= image_tag "flag-eng.png", class: "flag", alt: "English" %></a></li>		        
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -34,11 +35,19 @@
 		<div class="page-content">
 			<div class="page-sub-content narrow">
 				<p>想获得一次免费咨询机会？通过微信或邮件联系我们吧！</p>
-				<h3>WeChat: abcdefg</h3>
-				<h3>Email: hello@abdc.com</h3>
+				<h3>WeChat: abcdefg<br>
+				Email: hello@abdc.com</h3>
+			</div>
+
+			<hr>
+
+			<div class="page-sub-content narrow">
+				<p>英国米尔顿凯恩斯市</p>
 			</div>
 		</div>
 	</div>
 
-<%= render 'footer' %>
+	<footer>
+		<%= render 'copyright' %>
+	</footer>
 </div>

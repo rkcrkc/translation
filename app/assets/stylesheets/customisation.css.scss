@@ -1,16 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Archivo+Black|Source+Sans+Pro:300);
+@import url(http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js);
 
 /* BASE STYLES ====================== */
 
-$font-family-sans-serif: 'Source Sans Pro', Helvetica, sans-serif;
+$font-family-sans-serif: 'Source Sans Pro', Helvetica, sans-serif, "804ba4e432b94daf82f593b7a0defad1", "jdzhonyuanjian";
 $gutter: 30px;
 
 $blue: #1fa8ce; /* 31,168,206 */
 $blue2: #318ce7; /* 49,140,231 */
 $blue-logo: #85ADDD; /* 133,173,221 */
-$pink: #ef5285; /* 239,82,133 */
+$pink: #e5007e; /* 229,0,126 */
 $red: #FF5A5F; /* 255,90,95 */
-$green: #67D5B5; /* 96,197,186 */
+$green: #67D5B5; /* 103,213,181 */
 $yellow: #FCEA00; /* 254,238,125 */
 $l-grey: #9daaaf; /* 157,170,175 */
 $grey: #86969c; /* 134,150,156 */
@@ -36,18 +37,18 @@ $orange: #ff5f2e;
 			padding: $gutter/2 $gutter $gutter/3 $gutter;
 			margin: 0;
 
-			a {
-				color: white;				
+			a {		
 			}
 
 		.navbar-nav > li > a {
 			color: white;
+
 			transition: color 0.2s linear;
 			-o-transition: color 0.2s linear;
 			-moz-transition: color 0.2s linear;
 			-webkit-transition: color 0.2s linear;		
 			&:hover, &:focus {
-				color: #ddd;
+				color: $green;
 			}
 		}	
 
@@ -97,7 +98,7 @@ $orange: #ff5f2e;
 }
 
 .section-background-overlay {
-	background-color: rgba(0,0,0,0.6)
+	background-color: rgba(0,0,0,0.15)
 }
 
 .section-content {
@@ -109,28 +110,46 @@ $orange: #ff5f2e;
 }
 
 .section-heading {
-	max-width: 700px;
+	max-width: 750px;
 	margin: 0 auto $gutter*2 auto;
 }	
 
 .hero {
-	background: image-url("blonde.jpg");
+	background: image-url("guy-yellow.jpg");
 	background-size: cover;
-	background-position: center;
+	background-position: top center;
 	background-attachment: fixed;
 
 	.section-content {
 		max-width: 800px;
+
+		@media (max-width: 480px) {
+			padding-top: $gutter/2;
+		}
+
 	}
 
 	h1, h3 {
 		color: white;
 	}
 
+	h1 {
+		@media (max-width: 480px) {
+			font-size: 42px;
+			text-align: center;
+		}
+	}
+
+	h3 {
+		@media (max-width: 480px) {
+			text-align: center;
+		}		
+	}
+
 }
 
 .hero-overlay {
-	background-color: rgba(0,0,0,0.05)
+	background-color: rgba(0,0,0,0.1)
 }
 
 .hero-en {
@@ -154,7 +173,7 @@ $orange: #ff5f2e;
 
 #cta-holder {
 	max-width: 455px;
-	background: rgba(255,90,95,0.8);
+	background: rgba(103,213,181,1);
 	margin: $gutter 0;
 	padding: $gutter;
 	border-radius: 20px;
@@ -171,16 +190,26 @@ $orange: #ff5f2e;
 
 	.btn-primary {
 		color: white;
-		background-color: $blue2;
-		border-color: $blue2;
+		background-color: $pink;
+		border: none;
+		padding: 20px;
+		font-size: 22px;
+		font-weight: 700;
+		border-radius: 10px;
+		margin-top: 7px;
+
+
 		transition: background 0.2s linear;
 		-o-transition: background 0.2s linear;
 		-moz-transition: background 0.2s linear;
 		-webkit-transition: background 0.2s linear;	
 		&:hover, &:focus {
-			background-color: $blue-logo;
-			border-color: $blue-logo;
+			background-color: $blue2;
 		}
+	}
+
+	@media (max-width: 480px) {
+		text-align: center;
 	}
 }
 
@@ -231,6 +260,15 @@ $orange: #ff5f2e;
 		border-top-left-radius: 0;
 		padding: 15px 25px;
 
+		transition: background 0.2s linear;
+		-o-transition: background 0.2s linear;
+		-moz-transition: background 0.2s linear;
+		-webkit-transition: background 0.2s linear;	
+
+		&:hover, &:focus {
+			background-color: $blue2;
+		}
+
 		@media (max-width: 480px) {
 			padding: 10px 15px;
 		}	
@@ -242,10 +280,20 @@ $orange: #ff5f2e;
 		border-top-right-radius: 0;
 		padding: 15px 25px;
 
+		transition: background 0.2s linear;
+		-o-transition: background 0.2s linear;
+		-moz-transition: background 0.2s linear;
+		-webkit-transition: background 0.2s linear;	
+
+		&:hover, &:focus {
+			background-color: $blue2;
+		}
+
 		@media (max-width: 480px) {
 			padding: 10px 15px;
 		}	
 	}
+
 }
 
 
@@ -269,26 +317,40 @@ $orange: #ff5f2e;
 	.btn-default:hover {
 		background-color: transparent;
 		border: none;
-	}	
+	}
+
+	.tooltip.in {
+		opacity: 1;
+	}
+
+	.tooltip-inner {
+		background-color: $green;
+	}
+
+	.tooltip.top .tooltip-arrow {
+		border-top-color: $green;
+	}
 
 }
 
 .features {
-	background: image-url("guy-coffee.jpg");
+	background: image-url("button-up.jpg");
 	background-size: cover;
-	background-position: center;
+	background-position: top center;
 	background-attachment: fixed;
 
 	.section-background-overlay {
+		background-color: rgba(265,265,265,0.2)
 	}
 
 
-	h2, h5, p {
-		color: white;
+	h5, p {
+		color: #2e3436
 	}
 
 	h3 {
-		color: $red;
+		color: $blue2;
+		font-weight: 700;
 	}
 
 	.row {
@@ -322,7 +384,7 @@ $orange: #ff5f2e;
 }
 
 .services {
-	background: image-url("girl-sitting.jpeg");
+	background: image-url("cup.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -350,15 +412,15 @@ $orange: #ff5f2e;
 	}
 
 	.panel-1 {
-		background-color: rgba(255,90,95,0.8);
+		background-color: rgba(96,197,186,0.85);
 	}
 
 	.panel-2 {
-		background-color: rgba(255,90,95,0.8);
+		background-color: rgba(96,197,186,0.85);
 	}
 
 	.panel-3 {
-		background-color: rgba(255,90,95,0.8);
+		background-color: rgba(96,197,186,0.85);
 	}
 
 	.col-sm-4, .col-sm-8 {
@@ -419,18 +481,19 @@ $orange: #ff5f2e;
 
 .sectors {
 
+	background-color: white;
+	
+	h2, h5 {
+	}
+
 	h3 {
 		padding-left: $gutter/2;
-		color: $green;
+		color: $blue2;
 	}
 
 	p {
-		color: black;
+		color: #2e3436;
 		margin: 0;
-	}
-
-	.section-heading h2 {
-		color: $grey;
 	}
 
 	.section-content {
@@ -439,7 +502,7 @@ $orange: #ff5f2e;
 	}
 
 	.row {
-		text-align: left;
+		text-align: center;		
 	}
 
 	.sector-icon {
@@ -460,14 +523,14 @@ $orange: #ff5f2e;
 
 
 .email-capture {
-	background: image-url("guy-outside.jpg");
+	background: image-url("shoes.jpg");
 	background-size: cover;
-	background-position: center;
+	background-position: top center;
 	background-attachment: fixed;
-	margin-top: $gutter/2;
+	padding-top: $gutter/2;
 
 	.email-capture-text-box {
-		background-color: rgba(255,90,95,0.85);
+		background-color: rgba(49,140,231,0.8);
 		max-width: 600px;
 		padding: $gutter;
 		margin: $gutter auto;
@@ -475,15 +538,22 @@ $orange: #ff5f2e;
 
 		.btn-primary {
 			color: white;
-			background-color: $blue2;
-			border-color: $blue2;
+			background-color: $pink;
+			border: none;
+			padding: 20px;
+			font-size: 22px;
+			font-weight: 700;
+			border-radius: 10px;
+			margin-top: 7px;
+
+
 			transition: background 0.2s linear;
 			-o-transition: background 0.2s linear;
 			-moz-transition: background 0.2s linear;
 			-webkit-transition: background 0.2s linear;	
 			&:hover, &:focus {
-				background-color: $blue;
-				border-color: $blue;
+				background-color: $green;
+				border-color: $green;
 			}
 		}
 	}
@@ -500,7 +570,7 @@ $orange: #ff5f2e;
 }
 
 footer {
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(35,35,35,0.8);
 	color: white;
 
 	.footer {
@@ -538,7 +608,7 @@ footer {
 			margin: 5px 0;
 		}
 
-		p {
+		li a {
 			margin: 0;
 			color: white;
 			transition: color 0.2s linear;
@@ -546,7 +616,7 @@ footer {
 			-moz-transition: color 0.2s linear;
 			-webkit-transition: color 0.2s linear;		
 			&:hover, &:focus {
-				color: #dedede;
+				color: $green;
 			}
 		}
 	}
@@ -582,13 +652,13 @@ footer {
 		}
 
 		.navbar-nav > li > a {
-			color: white;
+			color: $pink;
 			transition: color 0.2s linear;
 			-o-transition: color 0.2s linear;
 			-moz-transition: color 0.2s linear;
 			-webkit-transition: color 0.2s linear;		
 			&:hover, &:focus {
-				color: #ddd;
+				color: $blue2;
 			}
 		}	
 	
@@ -708,7 +778,7 @@ footer {
 
 .page-about {
 	.page-header {
-		background: $red;
+		background: $green;
 	}
 
 }
@@ -810,7 +880,7 @@ footer {
 .page-contact {
 
 	.page-header {
-			background: $orange;	
+			background: $green;	
 	}
 
 	footer {
@@ -840,7 +910,6 @@ footer {
 	margin: 0 auto;
 }
 
-
 /* Box Model Hack */
 * {
      -moz-box-sizing: border-box; /* Firexfox */
@@ -850,6 +919,8 @@ footer {
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+
 
 
 /* INDUSTRY TILES */

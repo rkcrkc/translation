@@ -4,46 +4,70 @@ $gutter: 30px;
 $blue: #1fa8ce; /* 31,168,206 */
 $blue2: #318ce7; /* 49,140,231 */
 $blue-logo: #85ADDD; /* 133,173,221 */
-$pink: #ef5285; /* 239,82,133 */
+$pink: #e5007e; /* 229,0,126 */
 $red: #FF5A5F; /* 255,90,95 */
-$green: #67D5B5; /* 96,197,186 */
+$green: #67D5B5; /* 103,213,181 */
 $yellow: #FCEA00; /* 254,238,125 */
 $l-grey: #9daaaf; /* 157,170,175 */
 $grey: #86969c; /* 134,150,156 */
 $purple: #C89EC4;
 $orange: #ff5f2e;
+$text: #2e3436;
 
 /*----------------------------------------------------------------------------- 
 1. SECTIONS
 -----------------------------------------------------------------------------*/
 
 .en {
-	.hero {
-		background: image-url("photo/guy-phone.jpeg");
+	.hero-en {
+		background: image-url("photo/girl-bags.jpg");
 		background-size: cover;
-		background-position: center;
+		background-position: bottom center;
 		background-attachment: fixed;
+
+		.section-content {
+			max-width: 800px;
+			padding-bottom: 0;
+		}
+
+		h1, h3 {
+			color: white;
+		}	
 	}
 
-	#cta-holder {
-		max-width: 560px;
-		background: rgba(0,0,0,0.4);
-		margin: $gutter 0;
-		padding: $gutter;
-		border-radius: 20px;
-		text-align: left;
+	.hero-overlay {
+		background-color: rgba(0,0,0,0.1)
+	}
 
-		h2 {
-			margin-top: 0px;
-			color: $red;
-		}
+	.hero-headline {
+		text-align: center;
+	}
 
-		h5 {
-			color: $red;
-		}
-
-		p {
+	#cta-holder-en {
+		
+		a {
 			color: white;
+		}
+
+		padding: $gutter 0 $gutter*2 0;
+
+		.btn-primary {
+			color: white;
+			background-color: $pink;
+			border: none;
+			padding: $gutter/2 $gutter*1.5;
+			font-size: 18px;
+			font-weight: 700;
+			border-radius: 40px;
+			margin-top: 7px;
+
+			transition: background 0.2s linear;
+			-o-transition: background 0.2s linear;
+			-moz-transition: background 0.2s linear;
+			-webkit-transition: background 0.2s linear;	
+			&:hover, &:focus {
+				background-color: $blue2;
+			}
 		}
 
 	}
@@ -55,16 +79,67 @@ $orange: #ff5f2e;
 	}
 
 	.why {
-		h6 /* Testimonial names */{
-			font-family: 'Archivo Black', sans-serif;
-			font-size: 16px;
-			color: $grey;
+
+		.section-heading {
+			margin-bottom: $gutter;
+		}
+		
+		img {
+			max-width: 32px;
+			padding-bottom: 7px;
 		}
 
-		p {
-			color: white;
-			margin: 0;
+		.reason-wrapper {
+			margin-bottom: $gutter;
 		}
+		
+		.reason-text {
+			max-width: 700px;
+			padding: $gutter*0.67 $gutter;
+			background-color: #f6f6f6;
+
+			-webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
+			moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
+			box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
+
+
+			h2 {
+				color: $pink;
+				font-size: 28px;
+				margin-top: 0;
+			}
+
+			p {
+				font-size: 18px;
+				font-weight: 400;
+			}			
+		}
+		
+		.emoji-1 {
+			padding-top: $gutter*1.2;
+			max-width: 68px;
+		}
+
+		.emoji-2 {
+			max-width: 100px;
+		}
+
+		.emoji-3 {
+			padding-top: $gutter;
+			max-width: 90px;			
+		}
+
+	}
+
+	.partners {
+		.partner-logo-en {
+			img {
+				margin-top: 25px;
+				margin-bottom: 20px;		
+				max-width: 110px;
+				max-height: 50px;
+			}
+		}	
 	}
 
 	.services {

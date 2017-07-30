@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Archivo+Black|Source+Sans+Pro:300);
+@import url(https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,700|Source+Sans+Pro:300|Lato:300);
 @import url(http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js);
 
 /* BASE STYLES ====================== */
 
-$font-family-sans-serif: 'Source Sans Pro', Helvetica, sans-serif, "804ba4e432b94daf82f593b7a0defad1", "jdzhonyuanjian";
+$font-family-sans-serif: 'Lato', Helvetica, sans-serif;
 $gutter: 30px;
 
 $blue: #1fa8ce; /* 31,168,206 */
@@ -48,7 +48,6 @@ $orange: #ff5f2e;
 			-moz-transition: color 0.2s linear;
 			-webkit-transition: color 0.2s linear;		
 			&:hover, &:focus {
-				color: $green;
 			}
 		}	
 
@@ -79,6 +78,7 @@ $orange: #ff5f2e;
 
 			img {
 				max-width: 180px;
+				max-height: 50px;
 			}
 		}		
 
@@ -117,8 +117,12 @@ $orange: #ff5f2e;
 .hero {
 	background: image-url("guy-yellow.jpg");
 	background-size: cover;
-	background-position: top center;
+	background-position: 0 75%;
 	background-attachment: fixed;
+
+	@media (max-width: 600px) {
+		background-position: center;
+	}
 
 	.section-content {
 		max-width: 800px;
@@ -149,22 +153,7 @@ $orange: #ff5f2e;
 }
 
 .hero-overlay {
-	background-color: rgba(0,0,0,0.1)
-}
-
-.hero-en {
-	background: image-url("asian-2.jpg");
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-
-	.section-content {
-		max-width: 800px;
-	}
-
-	h1, h3 {
-		color: white;
-	}	
+	background-color: rgba(0,0,0,0.05)
 }
 
 .hero-headline {
@@ -190,7 +179,7 @@ $orange: #ff5f2e;
 
 	.btn-primary {
 		color: white;
-		background-color: $pink;
+		background-color: $blue2;
 		border: none;
 		padding: 20px;
 		font-size: 22px;
@@ -204,7 +193,7 @@ $orange: #ff5f2e;
 		-moz-transition: background 0.2s linear;
 		-webkit-transition: background 0.2s linear;	
 		&:hover, &:focus {
-			background-color: $blue2;
+			background-color: $pink;
 		}
 	}
 
@@ -301,13 +290,12 @@ $orange: #ff5f2e;
 	border-top: 1px solid #ECECEC;
 
 	.partner-logo {
-	}
-
-	img {
-		margin-top: 25px;
-		margin-bottom: 20px;		
-		max-width: 200px;
-		max-height: 50px;
+		img {
+			margin-top: 25px;
+			margin-bottom: 20px;		
+			max-width: 200px;
+			max-height: 50px;
+		}
 	}
 
 	.btn-default {
@@ -516,6 +504,17 @@ $orange: #ff5f2e;
 		background-color: #f6f6f6;
 		border-radius: 10px;
 		max-width: 455px;
+
+		transition: background-color 0.2s linear;
+		-o-transition: background-color 0.2s linear;
+		-moz-transition: background-color 0.2s linear;
+		-webkit-transition: background-color 0.2s linear;	
+		&:hover {
+			background-color: $blue2;		
+			p {
+				color: white;
+			}
+		}
 	}
 
 
@@ -530,7 +529,7 @@ $orange: #ff5f2e;
 	padding-top: $gutter/2;
 
 	.email-capture-text-box {
-		background-color: rgba(49,140,231,0.8);
+		background-color: rgba(103,213,181,0.8);
 		max-width: 600px;
 		padding: $gutter;
 		margin: $gutter auto;
@@ -538,7 +537,7 @@ $orange: #ff5f2e;
 
 		.btn-primary {
 			color: white;
-			background-color: $pink;
+			background-color: $blue2;
 			border: none;
 			padding: 20px;
 			font-size: 22px;
@@ -552,8 +551,7 @@ $orange: #ff5f2e;
 			-moz-transition: background 0.2s linear;
 			-webkit-transition: background 0.2s linear;	
 			&:hover, &:focus {
-				background-color: $green;
-				border-color: $green;
+				background-color: $pink;
 			}
 		}
 	}
@@ -652,13 +650,13 @@ footer {
 		}
 
 		.navbar-nav > li > a {
-			color: $pink;
+			color: white;
 			transition: color 0.2s linear;
 			-o-transition: color 0.2s linear;
 			-moz-transition: color 0.2s linear;
 			-webkit-transition: color 0.2s linear;		
 			&:hover, &:focus {
-				color: $blue2;
+				color: white;
 			}
 		}	
 	
@@ -687,6 +685,7 @@ footer {
 
 			img {
 				max-width: 180px;
+				max-height: 50px;
 			}
 		}		
 

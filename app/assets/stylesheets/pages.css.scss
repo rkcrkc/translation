@@ -12,6 +12,7 @@ $yellow: #FCEA00;
 $l-grey: #9daaaf;
 $grey: #86969c;
 $purple: #C89EC4;
+$text: #2e3436;
 
 
 /* Pre-logo edit colours
@@ -32,13 +33,15 @@ body {
 }
 
 h1 /* Landing headline */{
-	font-family: 'Archivo Black', sans-serif;
+	font-family: 'Zilla Slab', sans-serif;
+	font-weight: 700;
 	font-size: 48px;
 	text-shadow: 1px 1px #252525;
 }
 
 h2 /* Section sub-heading */{
-	font-family: 'Archivo Black', sans-serif;
+	font-family: 'Zilla Slab', sans-serif;
+	font-weight: 700;
 	font-size: 32px;
 	color: #2e3436;
 	line-height: 1.2;
@@ -60,6 +63,7 @@ h5 /* Section title */{
 	font-size: 14px;
 	color: $grey;
 	text-transform: uppercase;
+	line-height: 1.5;
 }
 
 h6 /* Testimonial names */{
@@ -71,7 +75,7 @@ p {
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 1.5;
-	color: $grey;
+	color: #2e3436;
 	text-decoration: none;	
 }
 

@@ -17,9 +17,9 @@
 		    </div>
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a class="hvr-bob" href="pages/about">关于我们</a></li>
-		        <li><a class="hvr-bob" href="pages/contact">联系我们</a></li>      
-				<!-- <li><a class="hvr-bob" href="/en/home"><%= image_tag "flag-eng.png", class: "flag", alt: "English" %></a></li> -->
+		        <li><a href="pages/about">我们是谁？</a></li>
+		        <li><a href="pages/contact">联系我们</a></li>
+		        <li><a class="hvr-bob" href="/en/home"><%= image_tag "flag-eng.png", class: "flag", alt: "English" %></a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -35,7 +35,7 @@
 				</div>
 
 				<!-- Call-to-Action -->
-				<div id="cta-holder" class="hvr-grow">
+				<div id="cta-holder">
 					<h2>100%免费咨询</h2>
 					<p>第一印象起决定作用。想知道外国客户怎么看您现有的品牌文案？关注我们的微信公众号，我们的团队会在24小时内给您反馈。</p>
 					
@@ -53,7 +53,7 @@
 					        <h4 class="modal-title" id="myModalLabel">扫一扫，关注我们的微信公众号！</h4>
 					      </div>
 					      <div class="modal-body">
-					        ...
+					        <%= image_tag "qr.jpg" %>
 					      </div>
 					      <div class="modal-footer">
 					        <button type="button" class="btn btn-default" data-dismiss="modal">好了</button>

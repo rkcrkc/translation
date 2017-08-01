@@ -33,21 +33,21 @@ body {
 }
 
 h1 /* Landing headline */{
-	font-family: 'Zilla Slab', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	font-size: 48px;
-	text-shadow: 1px 1px #252525;
 }
 
 h2 /* Section sub-heading */{
-	font-family: 'Zilla Slab', sans-serif;
-	font-weight: 700;
-	font-size: 32px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 26px;
 	color: #2e3436;
 	line-height: 1.2;
 }
 
 h3 /* Landing sub-headline */{
+	font-family: 'Poppins', sans-serif;
 	font-size: 18px;
 	color: black;
 	line-height: 1.5;
@@ -75,7 +75,7 @@ p {
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 1.5;
-	color: #2e3436;
+	color: $text;
 	text-decoration: none;	
 }
 

@@ -7,12 +7,15 @@ $blue-logo: #85ADDD; /* 133,173,221 */
 $pink: #e5007e; /* 229,0,126 */
 $red: #FF5A5F; /* 255,90,95 */
 $green: #67D5B5; /* 103,213,181 */
+$green2: #60c5ba; /* 96,197,186 */
 $yellow: #FCEA00; /* 254,238,125 */
 $l-grey: #9daaaf; /* 157,170,175 */
 $grey: #86969c; /* 134,150,156 */
+$l-grey2: #c8c8c8; /* 200,200,200 */
 $purple: #C89EC4;
 $orange: #ff5f2e;
 $text: #2e3436;
+$green-shadow: #57b296;
 
 /*----------------------------------------------------------------------------- 
 1. SECTIONS
@@ -32,6 +35,25 @@ $text: #2e3436;
 
 		h1, h3 {
 			color: white;
+			text-shadow: none;
+		}	
+
+		.icon {
+			width: 45px;
+			margin-bottom: $gutter;
+		}
+
+		.navbar-nav > li > a {
+			color: white;
+			font-weight: 700;
+
+			transition: color 0.2s linear;
+			-o-transition: color 0.2s linear;
+			-moz-transition: color 0.2s linear;
+			-webkit-transition: color 0.2s linear;		
+			&:hover, &:focus {
+				color: $green;
+			}
 		}	
 	}
 
@@ -49,13 +71,13 @@ $text: #2e3436;
 			color: white;
 		}
 
-		padding: $gutter 0 $gutter*2 0;
+		padding: $gutter 0 $gutter 0;
 
 		.btn-primary {
 			color: white;
-			background-color: $pink;
+			background-color: $blue2;
 			border: none;
-			padding: $gutter/2 $gutter*1.5;
+			padding: $gutter/1.5 $gutter*1.5;
 			font-size: 18px;
 			font-weight: 700;
 			border-radius: 40px;
@@ -66,9 +88,10 @@ $text: #2e3436;
 			-moz-transition: background 0.2s linear;
 			-webkit-transition: background 0.2s linear;	
 			&:hover, &:focus {
-				background-color: $blue2;
+				background-color: $pink;
 			}
 		}
+
 
 	}
 
@@ -78,10 +101,17 @@ $text: #2e3436;
 		margin: 20px auto;
 	}
 
+	.section-heading {
+		h2 {
+			font-size: 25px;
+		}
+	}
+
 	.why {
 
 		.section-heading {
-			margin-bottom: $gutter;
+			margin-bottom: $gutter*2.5;
+
 		}
 		
 		img {
@@ -103,10 +133,12 @@ $text: #2e3436;
 			box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
 
 
-			h2 {
-				color: $pink;
-				font-size: 28px;
+			h3 {
+				font-family: 'Poppins', sans-serif;
+				color: $blue2;
+				font-size: 24px;
 				margin-top: 0;
+				font-weight: 700;
 			}
 
 			p {
@@ -118,17 +150,56 @@ $text: #2e3436;
 		.emoji-1 {
 			padding-top: $gutter*1.2;
 			max-width: 68px;
+
+			@media (max-width: 480px) {
+				max-width: 45px;
+			}
 		}
 
 		.emoji-2 {
 			max-width: 100px;
+
+			@media (max-width: 480px) {
+				max-width: 67px;
+			}
 		}
 
 		.emoji-3 {
 			padding-top: $gutter;
 			max-width: 90px;			
+
+			@media (max-width: 480px) {
+				max-width: 60px;
+			}			
 		}
 
+	}
+
+	.get-started {
+		background-color: $green;
+
+		.section-content {
+			padding-bottom: $gutter;
+		}
+
+		h1 {
+			color: white;
+			text-shadow: none;
+		}
+
+		h3 {
+			font-family: 'Poppins', sans-serif;
+			color: white;
+			font-size: 24px;
+			margin: $gutter auto 0;
+			font-weight: 400;
+			max-width: 600px;
+		}
+
+		.icon {
+			width: 45px;
+			margin: $gutter*1.5 0 0;
+		}
 	}
 
 	.partners {
@@ -148,37 +219,132 @@ $text: #2e3436;
 		background-position: center;
 		background-attachment: fixed;
 
+		h1 {
+			text-shadow: none;
+		}
+
 		h3 {
-			font-family: 'Archivo Black', sans-serif;
 			font-size: 28px;
 			color: white;
 			line-height: 1.2;
 			margin-top: 0;
+			text-transform: uppercase;
+		}
+
+		.panel-1, .panel-2, .panel-3 {
+			background-color: rgba(103,213,181,0.85);
 		}
 	}
 
 	.features {
-		background: image-url("canvas.jpeg");
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
+		background: $l-grey;
+
+		h1 {
+			color: white;
+			text-shadow: none;
+		}
+
+		h3 {
+			color: white;
+		}
+
+		p {
+			color: white;
+			font-size: 16px;
+		}
+		
+		.row {
+			.list-text {
+				padding: $gutter/2;
+			}
+		}
 	}	
 
 	.sectors {
-		.section-heading h2 {
-			color: black;
+		.section-heading h1 {
+			text-shadow: none;
+			color: $blue2;
+		}
+
+		.section-content {
+			padding-bottom: $gutter*4;
+		}
+
+		h3 {
+			text-transform: uppercase;
+			font-size: 24px;
 		}
 	}
 
+
 	.email-capture {
-		background: image-url("guy-laugh.jpg");
-		background-size: cover;
-		background-position: top center;
-		background-attachment: fixed;
+		background: $green;
 
 		.email-capture-text-box {
-			background: rgba(0,0,0,0.2)
+			background: rgba(0,0,0,0);
+
+			.btn-primary {
+				color: white;
+				background-color: $pink;
+				border: none;
+				padding: $gutter/2 $gutter*1.5;
+				font-size: 18px;
+				font-weight: 700;
+				border-radius: 40px;
+				margin-top: 7px;
+
+				transition: background 0.2s linear;
+				-o-transition: background 0.2s linear;
+				-moz-transition: background 0.2s linear;
+				-webkit-transition: background 0.2s linear;	
+				&:hover, &:focus {
+					background-color: $green;
+				}				
+			}
 		}
+
+		h1 {
+			text-shadow: none;			
+		}
+
+		h3 {
+			color: white;
+			font-size: 24px;
+		}
+	}
+
+	footer {
+		background-color: rgba(161,161,161,1);
+		color: white;
+
+		ul li a p {
+			color: white;
+			transition: color 0.2s linear;
+			-o-transition: color 0.2s linear;
+			-moz-transition: color 0.2s linear;
+			-webkit-transition: color 0.2s linear;		
+			&:hover, &:focus {
+				color: $green;
+			}
+		}
+	}
+
+
+}
+
+.page-en {
+
+	.navbar ul li a {
+		font-weight: 700;
+	}
+
+	.team-member h2 {
+		color: $blue2;
+	}
+
+	h3 {
+		color: $text;
 	}
 
 }
+

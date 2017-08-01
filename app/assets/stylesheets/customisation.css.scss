@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,700|Source+Sans+Pro:300|Lato:300);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,700|Source+Sans+Pro:300|Lato:300);
 @import url(http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js);
 
 /* BASE STYLES ====================== */
 
-$font-family-sans-serif: 'Lato', Helvetica, sans-serif;
+$font-family-sans-serif: 'Poppins', Helvetica, sans-serif;
 $gutter: 30px;
 
 $blue: #1fa8ce; /* 31,168,206 */
@@ -17,6 +17,7 @@ $l-grey: #9daaaf; /* 157,170,175 */
 $grey: #86969c; /* 134,150,156 */
 $purple: #C89EC4;
 $orange: #ff5f2e;
+$green-shadow: #468e78;
 
 /*----------------------------------------------------------------------------- 
 1. SECTIONS
@@ -42,19 +43,20 @@ $orange: #ff5f2e;
 
 		.navbar-nav > li > a {
 			color: white;
+			font-weight: 700;
 
 			transition: color 0.2s linear;
 			-o-transition: color 0.2s linear;
 			-moz-transition: color 0.2s linear;
 			-webkit-transition: color 0.2s linear;		
 			&:hover, &:focus {
+				color: $green;
 			}
 		}	
 
 		}
 	
 		.navbar-toggle {
-			margin: $gutter/2 0 0 $gutter;
 			border-color: white;
 
 			  @media (min-width: 768px) {
@@ -79,7 +81,12 @@ $orange: #ff5f2e;
 			img {
 				max-width: 180px;
 				max-height: 50px;
-			}
+
+				@media (max-width: 320px) {
+					max-width: 120px;
+				}
+
+			}			
 		}		
 
 	}
@@ -138,6 +145,7 @@ $orange: #ff5f2e;
 	}
 
 	h1 {
+		text-shadow: 1px 1px #252525;
 		@media (max-width: 480px) {
 			font-size: 42px;
 			text-align: center;
@@ -166,14 +174,15 @@ $orange: #ff5f2e;
 	margin: $gutter 0;
 	padding: $gutter;
 	border-radius: 20px;
-	text-align: left;
 
 	h2 {
+		text-align: left;
 		margin-top: 0px;
 		color: white;
 	}
 
 	p {
+		text-align: left;
 		color: white;
 	}
 
@@ -182,11 +191,10 @@ $orange: #ff5f2e;
 		background-color: $blue2;
 		border: none;
 		padding: 20px;
-		font-size: 22px;
+		font-size: 18px;
 		font-weight: 700;
 		border-radius: 10px;
 		margin-top: 7px;
-
 
 		transition: background 0.2s linear;
 		-o-transition: background 0.2s linear;
@@ -205,8 +213,11 @@ $orange: #ff5f2e;
 .why {
 
 	.quote {
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin: 10px 0;
+
+		@media (max-width: 480px) {
+			margin: 25px 0;
+		}		
 
 		h4 {
 			font-size: 18px;
@@ -226,6 +237,9 @@ $orange: #ff5f2e;
 	.person-pic {
 		max-width: 90px;
 		border-radius: 50%;
+		@media (max-width: 480px) {
+			max-width: 50px;
+		}	
 	}
 
 	.person-text {
@@ -233,8 +247,9 @@ $orange: #ff5f2e;
 
 		h6 {
 			font-weight: bold;
-			margin-top: 5px;
-			margin-bottom: 5px;
+			margin-top: 8px;
+			margin-bottom: 2px;
+			text-transform: uppercase;
 		}
 
 		p {
@@ -268,6 +283,7 @@ $orange: #ff5f2e;
 		border-radius: 35px;
 		border-top-right-radius: 0;
 		padding: 15px 25px;
+		margin-bottom: 40px;
 
 		transition: background 0.2s linear;
 		-o-transition: background 0.2s linear;
@@ -280,6 +296,7 @@ $orange: #ff5f2e;
 
 		@media (max-width: 480px) {
 			padding: 10px 15px;
+			margin-bottom: 0;
 		}	
 	}
 
@@ -287,14 +304,17 @@ $orange: #ff5f2e;
 
 
 .partners {
-	border-top: 1px solid #ECECEC;
+	.section-content {
+		padding-bottom: $gutter*2;
+	}	
 
 	.partner-logo {
-		img {
 			margin-top: 25px;
-			margin-bottom: 20px;		
-			max-width: 200px;
-			max-height: 50px;
+			margin-bottom: 20px;
+
+		img {	
+			max-width: 150px;
+			max-height: 40px;
 		}
 	}
 
@@ -475,7 +495,6 @@ $orange: #ff5f2e;
 	}
 
 	h3 {
-		padding-left: $gutter/2;
 		color: $blue2;
 	}
 
@@ -486,11 +505,20 @@ $orange: #ff5f2e;
 
 	.section-content {
 		max-width: 1000px;
-		margin: 0 auto 0 auto;
+		margin: 0 auto;
 	}
 
 	.row {
-		text-align: center;		
+		text-align: center;
+
+		.col-sm-6 {
+			margin-bottom: $gutter;
+		}
+
+
+		h3 {
+			max-width: 455px;
+		}	
 	}
 
 	.sector-icon {
@@ -540,11 +568,10 @@ $orange: #ff5f2e;
 			background-color: $blue2;
 			border: none;
 			padding: 20px;
-			font-size: 22px;
+			font-size: 18px;
 			font-weight: 700;
 			border-radius: 10px;
 			margin-top: 7px;
-
 
 			transition: background 0.2s linear;
 			-o-transition: background 0.2s linear;
@@ -568,7 +595,7 @@ $orange: #ff5f2e;
 }
 
 footer {
-	background-color: rgba(35,35,35,0.8);
+	background-color: rgba(35,35,35,0.4);
 	color: white;
 
 	.footer {
@@ -580,7 +607,7 @@ footer {
 	}
 
 	.copyright-bar {
-		background-color: #222222;
+		background-color: #616161;
 		padding: $gutter/3;
 		margin: 0;
 
@@ -651,12 +678,13 @@ footer {
 
 		.navbar-nav > li > a {
 			color: white;
+			font-weight: 700;
 			transition: color 0.2s linear;
 			-o-transition: color 0.2s linear;
 			-moz-transition: color 0.2s linear;
 			-webkit-transition: color 0.2s linear;		
 			&:hover, &:focus {
-				color: white;
+				color: $pink;
 			}
 		}	
 	
@@ -691,7 +719,8 @@ footer {
 
 		.navbar-nav > .navbar-active-tab {
 			a {
-				
+				color: $pink;
+				font-weight: 700;
 			}
 		}
 
@@ -727,7 +756,7 @@ footer {
 	.page-title {
 		max-width: 700px;
 		margin: 0 auto $gutter*2 auto;
-		h2 {
+		h1, h2 {
 			color: white;
 		}
 	}
@@ -793,6 +822,10 @@ footer {
 	img {
 		max-width: 100px;
 		border-radius: 50px;
+	}
+
+	h2 {
+		color: $blue2;
 	}
 
 	h3 {

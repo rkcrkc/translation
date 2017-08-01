@@ -1,26 +1,22 @@
 <footer>
 	<div class="section footer">
 		<div class="row">
-			<div class="col-sm-3">
+			<a class="col-sm-3 hvr-grow" href="home/">
 				<%= image_tag "logo/logo-1.png", class: "brand-logo" %>
-			</div>	
+			</a>
 			<div class="col-sm-7">
 			</div>
 			<div class="col-sm-2">
 				<div class="footer-links">		
 					<ul>
-						<li><a href="trans"><p>Translation</p></a></li>
-						<li><a href="about"><p>About Us</p></a></li>
-						<li><a href="contact"><p>Contact</p></a></li>
+						<li><a href="/en/about"><p>WHO ARE WE?</p></a></li>
+						<li><a href="/en/contact"><p>CONTACT</p></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="copyright-bar">
-		<p>2016 All rights reserved. Dengpao Media Ltd. 灯泡媒体</p>
-		<p style="color:grey;">Icons made by <a href="http://www.flaticon.com/authors/freepik" target="_blank;">Freepik</a>, <a href="http://www.flaticon.com/authors/vectors-market" target="_blank;">Vector's Market</a> and <a href="http://www.flaticon.com/authors/pixel-buddha">Pixel Buddha</a> from www.flaticon.com</p>
-	</div>
+<%= render 'copyright' %>
 
 </footer>

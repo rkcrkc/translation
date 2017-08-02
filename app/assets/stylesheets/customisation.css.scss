@@ -17,6 +17,7 @@ $l-grey: #9daaaf; /* 157,170,175 */
 $grey: #86969c; /* 134,150,156 */
 $purple: #C89EC4;
 $orange: #ff5f2e;
+$text: #2e3436;
 $green-shadow: #468e78;
 
 /*----------------------------------------------------------------------------- 
@@ -44,13 +45,14 @@ $green-shadow: #468e78;
 		.navbar-nav > li > a {
 			color: white;
 			font-weight: 700;
+			font-size: 16px;
 
 			transition: color 0.2s linear;
 			-o-transition: color 0.2s linear;
 			-moz-transition: color 0.2s linear;
 			-webkit-transition: color 0.2s linear;		
 			&:hover, &:focus {
-				color: $green;
+				color: $pink;
 			}
 		}	
 
@@ -119,6 +121,9 @@ $green-shadow: #468e78;
 .section-heading {
 	max-width: 750px;
 	margin: 0 auto $gutter*2 auto;
+	h2 {
+		font-weight: 700;
+	}
 }	
 
 .hero {
@@ -140,19 +145,17 @@ $green-shadow: #468e78;
 
 	}
 
-	h1, h3 {
-		color: white;
-	}
-
 	h1 {
-		text-shadow: 1px 1px #252525;
+		color: white;
 		@media (max-width: 480px) {
 			font-size: 42px;
 			text-align: center;
 		}
 	}
 
-	h3 {
+	h2 {
+		color: white;
+		font-size: 28px;
 		@media (max-width: 480px) {
 			text-align: center;
 		}		
@@ -161,7 +164,7 @@ $green-shadow: #468e78;
 }
 
 .hero-overlay {
-	background-color: rgba(0,0,0,0.05)
+	background-color: rgba(0,0,0,0.11)
 }
 
 .hero-headline {
@@ -175,20 +178,26 @@ $green-shadow: #468e78;
 	padding: $gutter;
 	border-radius: 20px;
 
+	-webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
+	moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
+	box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);	
+
 	h2 {
 		text-align: left;
 		margin-top: 0px;
 		color: white;
+		font-weight: 700;
 	}
 
 	p {
+		font-size: 18px;
 		text-align: left;
 		color: white;
 	}
 
 	.btn-primary {
 		color: white;
-		background-color: $blue2;
+		background-color: $pink;
 		border: none;
 		padding: 20px;
 		font-size: 18px;
@@ -359,6 +368,7 @@ $green-shadow: #468e78;
 	h3 {
 		color: $blue2;
 		font-weight: 700;
+		font-size: 24px;
 	}
 
 	.row {
@@ -420,15 +430,15 @@ $green-shadow: #468e78;
 	}
 
 	.panel-1 {
-		background-color: rgba(96,197,186,0.85);
+		background-color: rgba(103,213,181,0.85);
 	}
 
 	.panel-2 {
-		background-color: rgba(96,197,186,0.85);
+		background-color: rgba(103,213,181,0.85);
 	}
 
 	.panel-3 {
-		background-color: rgba(96,197,186,0.85);
+		background-color: rgba(103,213,181,0.85);
 	}
 
 	.col-sm-4, .col-sm-8 {
@@ -496,6 +506,8 @@ $green-shadow: #468e78;
 
 	h3 {
 		color: $blue2;
+		font-size: 22px;
+		font-weight: 700;
 	}
 
 	p {
@@ -557,11 +569,15 @@ $green-shadow: #468e78;
 	padding-top: $gutter/2;
 
 	.email-capture-text-box {
-		background-color: rgba(103,213,181,0.8);
+		background-color: rgba(103,213,181,1);
 		max-width: 600px;
 		padding: $gutter;
 		margin: $gutter auto;
 		border-radius: 15px;
+
+		-webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
+		moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
+		box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);			
 
 		.btn-primary {
 			color: white;
@@ -591,6 +607,7 @@ $green-shadow: #468e78;
 
 	p {
 		color: white;
+		font-size: 18px;
 	}
 }
 
@@ -678,6 +695,7 @@ footer {
 
 		.navbar-nav > li > a {
 			color: white;
+			font-size: 16px;
 			font-weight: 700;
 			transition: color 0.2s linear;
 			-o-transition: color 0.2s linear;

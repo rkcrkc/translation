@@ -136,6 +136,11 @@ $green-shadow: #468e78;
 		background-position: center;
 	}
 
+	@media (max-width: 480px) {
+		background-attachment: inherit;
+		background-position: 55% 25%;
+	}
+
 	.section-content {
 		max-width: 800px;
 
@@ -205,12 +210,16 @@ $green-shadow: #468e78;
 		border-radius: 10px;
 		margin-top: 7px;
 
+		-webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
+		moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
+		box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);				
+
 		transition: background 0.2s linear;
 		-o-transition: background 0.2s linear;
 		-moz-transition: background 0.2s linear;
 		-webkit-transition: background 0.2s linear;	
 		&:hover, &:focus {
-			background-color: $pink;
+			background-color: $blue2;
 		}
 	}
 
@@ -356,6 +365,10 @@ $green-shadow: #468e78;
 	background-position: top center;
 	background-attachment: fixed;
 
+	@media (max-width: 480px) {
+		background-attachment: initial;
+	}
+
 	.section-background-overlay {
 		background-color: rgba(265,265,265,0.2)
 	}
@@ -407,6 +420,10 @@ $green-shadow: #468e78;
 	background-position: center;
 	background-attachment: fixed;
 	color: white;
+
+	@media (max-width: 480px) {
+		background-attachment: initial;
+	}
 
 	.section-content {
 		padding-top: $gutter;		
@@ -564,9 +581,13 @@ $green-shadow: #468e78;
 .email-capture {
 	background: image-url("shoes.jpg");
 	background-size: cover;
-	background-position: top center;
+	background-position: center;
 	background-attachment: fixed;
 	padding-top: $gutter/2;
+
+	@media (max-width: 480px) {
+		background-attachment: initial;
+	}
 
 	.email-capture-text-box {
 		background-color: rgba(103,213,181,1);
@@ -579,6 +600,10 @@ $green-shadow: #468e78;
 		moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
 		box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);			
 
+		@media (max-width: 480px) {
+			background-color: rgba(103,213,181,0.9);
+		}
+
 		.btn-primary {
 			color: white;
 			background-color: $blue2;
@@ -588,6 +613,10 @@ $green-shadow: #468e78;
 			font-weight: 700;
 			border-radius: 10px;
 			margin-top: 7px;
+
+			-webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
+			moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
+			box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);					
 
 			transition: background 0.2s linear;
 			-o-transition: background 0.2s linear;
@@ -763,7 +792,7 @@ footer {
 	}
 
 	.page-wrapper {
-		max-width: 700px;
+		max-width: 900px;
 		min-height: 500px;
 		height: 100%;
 		margin: 0 auto 0 auto;
@@ -836,7 +865,6 @@ footer {
 	padding: $gutter/2 0;
 	border-radius: 50px;
 
-
 	img {
 		max-width: 100px;
 		border-radius: 50px;
@@ -851,7 +879,7 @@ footer {
 	}
 
 	h5 {
-		color: $blue2;
+		color: $grey;
 	}
 
 	p {
@@ -859,6 +887,11 @@ footer {
 		background-color: rgba(0,0,0,0.05);
 		border-radius: 25px;
 		padding: 20px;
+
+		-webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
+		moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
+		box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);	
+
 	}
 }
 

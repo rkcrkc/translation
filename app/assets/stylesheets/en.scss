@@ -28,6 +28,10 @@ $green-shadow: #57b296;
 		background-position: bottom center;
 		background-attachment: fixed;
 
+		@media (max-width: 480px) {
+			background-attachment: initial;
+		}		
+
 		.section-content {
 			max-width: 800px;
 			padding-bottom: $gutter;
@@ -83,6 +87,10 @@ $green-shadow: #57b296;
 			border-radius: 40px;
 			margin-top: 7px;
 
+			-webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
+			moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);
+			box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.2);					
+
 			transition: background 0.2s linear;
 			-o-transition: background 0.2s linear;
 			-moz-transition: background 0.2s linear;
@@ -113,6 +121,9 @@ $green-shadow: #57b296;
 		.section-heading {
 			margin-bottom: $gutter*2.5;
 
+			@media (max-width: 767px) {
+				margin-bottom: $gutter*1.5;
+			}			
 		}
 		
 		img {
@@ -176,9 +187,11 @@ $green-shadow: #57b296;
 			}			
 		}
 
-		.col-xs-3 {
-			padding-left: 0;
-			padding-right: 0;
+		.emoji-1, .emoji-2, .emoji-3 {
+
+			@media (max-width: 767px) {
+				display: none;
+			}	
 		}
 
 	}
@@ -226,6 +239,17 @@ $green-shadow: #57b296;
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
+
+		@media (max-width: 480px) {
+			background-position: 45% 50%;
+			background-attachment: initial;
+		}		
+
+		.section-heading {
+			@media (max-width: 480px) {
+				padding-bottom: $gutter;
+			}			
+		}
 
 		h1 {
 			text-shadow: none;

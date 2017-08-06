@@ -14,12 +14,15 @@
 				<a class="navbar-brand hvr-grow" href="/">
 				<%= image_tag "logo/logo-ye.png" %>
 				</a>
+				<a class="mobile-flag hvr-bob" href="/en/home">
+					<%= image_tag "flag-eng.png", class: "flag", alt: "English" %>
+				</a>	
 		    </div>
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="pages/about">我们是谁？</a></li>
 		        <li><a href="pages/contact">联系我们</a></li>
-		        <li><a class="hvr-bob" href="/en/home"><%= image_tag "flag-eng.png", class: "flag", alt: "English" %></a></li>
+		        <li><a class="desktop-flag hvr-bob" href="/en/home"><%= image_tag "flag-eng.png", class: "flag", alt: "English" %></a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->

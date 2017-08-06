@@ -84,12 +84,21 @@ $green-shadow: #468e78;
 				max-width: 180px;
 				max-height: 50px;
 
-				@media (max-width: 320px) {
+				@media (max-width: 480px) {
 					max-width: 120px;
+					padding-top: 9px;
 				}
 
 			}			
 		}		
+
+		.mobile-flag {
+			float: right;
+			padding: 1em;
+			@media (min-width: 768px) {
+				display: none;
+			}
+		}
 
 	}
 
@@ -102,6 +111,12 @@ $green-shadow: #468e78;
 	.flag {
 		width: 18px;
 		height: 12px;
+	}
+
+	.desktop-flag {
+		@media (max-width: 768px) {
+			display: none;
+		}			
 	}
 
 }
@@ -692,6 +707,14 @@ footer {
 		}
 	}
 
+	.social-media-icons {
+
+	}
+
+	.social-icon {
+		max-width: 24px;
+		margin: 6px;
+	}
 
 }
 
@@ -761,8 +784,22 @@ footer {
 			img {
 				max-width: 180px;
 				max-height: 50px;
-			}
+
+				@media (max-width: 480px) {
+					max-width: 120px;
+					padding-top: 9px;
+				}
+
+			}			
 		}		
+
+		.mobile-flag {
+			float: right;
+			padding: 20px 0;
+			@media (min-width: 768px) {
+				display: none;
+			}
+		}			
 
 		.navbar-nav > .navbar-active-tab {
 			a {
@@ -784,7 +821,11 @@ footer {
 		height: 12px;
 	}
 
-
+	.desktop-flag {
+		@media (max-width: 768px) {
+			display: none;
+		}			
+	}
 
 	.banner-image {
 		width: 100%;
